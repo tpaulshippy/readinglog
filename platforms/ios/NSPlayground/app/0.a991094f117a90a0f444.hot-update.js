@@ -1,0 +1,11 @@
+webpackHotUpdate(0,{
+
+/***/ "./home/home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<ActionBar title=\"Home\">\n</ActionBar>\n\n<GridLayout>\n\t<ScrollView>\n\t\t<StackLayout class=\"home-panel\">\n\t\t\t<!--Add your page content here-->\n\t\t\t<Label textWrap=\"true\" text=\"Grace is awesome!\" class=\"h2 description-label\"></Label>\n\t\t\t<Label textWrap=\"true\" text=\"Write code in the editor or drag and drop components to build a NativeScript mobile application.\"\n\t\t\t class=\"h2 description-label\"></Label>\n\t\t\t<Label textWrap=\"true\" text=\"Scan the QR code with your mobile device and watch the changes sync live while you play with the code.\"\n\t\t\t class=\"h2 description-label\"></Label>\n\t\t</StackLayout>\n\t</ScrollView>\n</GridLayout>"
+
+/***/ })
+
+})
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ob21lL2hvbWUuY29tcG9uZW50Lmh0bWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSw2ckIiLCJmaWxlIjoiMC5hOTkxMDk0ZjExN2E5MGEwZjQ0NC5ob3QtdXBkYXRlLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSBcIjxBY3Rpb25CYXIgdGl0bGU9XFxcIkhvbWVcXFwiPlxcbjwvQWN0aW9uQmFyPlxcblxcbjxHcmlkTGF5b3V0PlxcblxcdDxTY3JvbGxWaWV3PlxcblxcdFxcdDxTdGFja0xheW91dCBjbGFzcz1cXFwiaG9tZS1wYW5lbFxcXCI+XFxuXFx0XFx0XFx0PCEtLUFkZCB5b3VyIHBhZ2UgY29udGVudCBoZXJlLS0+XFxuXFx0XFx0XFx0PExhYmVsIHRleHRXcmFwPVxcXCJ0cnVlXFxcIiB0ZXh0PVxcXCJHcmFjZSBpcyBhd2Vzb21lIVxcXCIgY2xhc3M9XFxcImgyIGRlc2NyaXB0aW9uLWxhYmVsXFxcIj48L0xhYmVsPlxcblxcdFxcdFxcdDxMYWJlbCB0ZXh0V3JhcD1cXFwidHJ1ZVxcXCIgdGV4dD1cXFwiV3JpdGUgY29kZSBpbiB0aGUgZWRpdG9yIG9yIGRyYWcgYW5kIGRyb3AgY29tcG9uZW50cyB0byBidWlsZCBhIE5hdGl2ZVNjcmlwdCBtb2JpbGUgYXBwbGljYXRpb24uXFxcIlxcblxcdFxcdFxcdCBjbGFzcz1cXFwiaDIgZGVzY3JpcHRpb24tbGFiZWxcXFwiPjwvTGFiZWw+XFxuXFx0XFx0XFx0PExhYmVsIHRleHRXcmFwPVxcXCJ0cnVlXFxcIiB0ZXh0PVxcXCJTY2FuIHRoZSBRUiBjb2RlIHdpdGggeW91ciBtb2JpbGUgZGV2aWNlIGFuZCB3YXRjaCB0aGUgY2hhbmdlcyBzeW5jIGxpdmUgd2hpbGUgeW91IHBsYXkgd2l0aCB0aGUgY29kZS5cXFwiXFxuXFx0XFx0XFx0IGNsYXNzPVxcXCJoMiBkZXNjcmlwdGlvbi1sYWJlbFxcXCI+PC9MYWJlbD5cXG5cXHRcXHQ8L1N0YWNrTGF5b3V0PlxcblxcdDwvU2Nyb2xsVmlldz5cXG48L0dyaWRMYXlvdXQ+XCIiXSwic291cmNlUm9vdCI6IiJ9
