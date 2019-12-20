@@ -1,0 +1,16 @@
+StackLayout {
+    background-color: white;
+}
+
+FlexboxLayout {
+    justify-content: space-around;
+    
+}
+
+TextField {
+    color: black;
+}
+
+Label {
+    color: black;
+}

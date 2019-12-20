@@ -11,15 +11,14 @@
     <Button [text]="'Add'" class="btn btn-primary" (tap)="add()">
     </Button>
 
-    <StackLayout orientation="Horizontal" *ngFor="let entry of readingLogList">
+    <FlexboxLayout alignItems="flex-start" width="300" *ngFor="let entry of readingLogList">
         <Label text={{entry.date.toDateString()}}></Label>
-        <Label text=" "></Label>
+<!--        <Label text=" "></Label>  -->
         <Label text={{entry.title}}></Label>
-        <Label text=" "></Label>
-        <Label text={{entry.minutes}}></Label>
-        <Label text=" minute(s)"></Label>
+<!--        <Label text=" "></Label> -->
+        <Label text='{{entry.minutes}} minute(s)'></Label>
 
-    </StackLayout>
+    </FlexboxLayout>
 
     <Button [text]="'Submit'" class="btn btn-primary" (tap)="submit()">
     </Button>

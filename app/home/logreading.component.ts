@@ -6,7 +6,7 @@ import { ReadingLog } from '../models/readinglog';
     selector: "Log",
     moduleId: module.id,
     templateUrl: "./logreading.component.html",
-    //    styleUrls: ["./home.component.css"]
+    styleUrls: ["./logreading.component.css"]
 })
 export class LogReadingComponent implements OnInit {
 
