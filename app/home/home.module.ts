@@ -8,10 +8,12 @@ import { NativeScriptUIDataFormModule } from "nativescript-ui-dataform/angular";
 import { NativeScriptUIAutoCompleteTextViewModule } from "nativescript-ui-autocomplete/angular";
 import { NativeScriptUIGaugeModule } from "nativescript-ui-gauge/angular";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 import { HomeRoutingModule } from "./home-routing.module";
 import { HomeComponent } from "./home.component";
 import { LogReadingComponent } from './logreading.component';
+import { LogReadingService } from './logreading.service';
 
 @NgModule({
     imports: [
@@ -24,11 +26,15 @@ import { LogReadingComponent } from './logreading.component';
         NativeScriptUIGaugeModule,
         NativeScriptCommonModule,
         HomeRoutingModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        NativeScriptHttpClientModule
     ],
     declarations: [
         HomeComponent,
         LogReadingComponent
+    ],
+    providers: [
+        LogReadingService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

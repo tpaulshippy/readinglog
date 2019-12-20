@@ -12,7 +12,7 @@
     </Button>
 
     <FlexboxLayout alignItems="flex-start" width="300" *ngFor="let entry of readingLogList">
-        <Label text={{entry.date.toDateString()}}></Label>
+        <Label text='{{entry.date | date}}'></Label>
 <!--        <Label text=" "></Label>  -->
         <Label text={{entry.title}}></Label>
 <!--        <Label text=" "></Label> -->
