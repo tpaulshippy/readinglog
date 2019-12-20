@@ -9,7 +9,7 @@ import { ReadingLog } from '../models/readingLog.model';
     providedIn: 'root'
 })
 export class LogReadingService {
-    private serviceUrl = 'http://reading-log.azurewebsites.net/api/readinglogs/1';
+    private serviceUrl = 'http://reading-log.azurewebsites.net/api/readinglogs/99';
 
     constructor(
         private http: HttpClient
@@ -17,6 +17,18 @@ export class LogReadingService {
 
     public getReadingLog(): Observable<ReadingLog> {
         return this.http.get<ReadingLog>(this.serviceUrl).pipe(
+            tap(data => console.log('All: ' + JSON.stringify(data))),
+            catchError(this.handleError<ReadingLog>(`getReadingLog`))
+        );
+    }
+
+    
+    public sendReadingLogEntries(entries): Observable<ReadingLog> {
+        return this.http.post<ReadingLog>(this.serviceUrl, entries, {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).pipe(
             tap(data => console.log('All: ' + JSON.stringify(data))),
             catchError(this.handleError<ReadingLog>(`getReadingLog`))
         );

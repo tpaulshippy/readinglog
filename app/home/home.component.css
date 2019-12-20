@@ -6,8 +6,12 @@
 
 .description-label{
     margin-bottom: 15;
+    margin-left: 10;
+    color: black;
 }
 
 StackLayout {
     background-image: url("~/images/background.jpg");
+    background-size: contain;
+    height: 600;
 }

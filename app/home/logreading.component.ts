@@ -3,6 +3,9 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { RouterExtensions } from "nativescript-angular/router";
 import { LogReading, ReadingLog } from '../models';
 import { LogReadingService } from './logreading.service';
+import { registerElement } from "nativescript-angular/element-registry";
+registerElement("BarcodeScanner", () => require("nativescript-barcodescanner").BarcodeScannerView);
+
 
 @Component({
     selector: "Log",
@@ -62,17 +65,33 @@ export class LogReadingComponent implements OnInit {
     }
 
     submit() {
-
+        const entries = this.readingLogList.filter(i=> i.new === true).map(i=> {
+            var entry: any = {};
+            entry.readingDate = i.date;
+            entry.publicationTitle = i.title;
+            entry.duration = i.minutes;
+            return entry;
+        });
+        this.readingLogService.sendReadingLogEntries(entries).subscribe(l=> {
+            
+        },
+        (error: any) => console.log(error),
+        () => {});
     }
 
     add() {
         let newReadingLogEntry: LogReading = new LogReading();
         newReadingLogEntry = { ...this.readingLog };
+        newReadingLogEntry.new = true;
         this.readingLogList.push(newReadingLogEntry);
 
         console.log(JSON.stringify(this.readingLogList));
 
         //alert('Entry submitted successfully');
         this.clearEntries();
+    }
+
+    scan() {
+        
     }
 }
