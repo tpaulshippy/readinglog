@@ -6,9 +6,9 @@
 		<StackLayout class="home-panel">
 			<!--Add your page content here-->
 			<Label textWrap="true" text="Reading is awesome!" class="h2 description-label"></Label>
-			<Label textWrap="true" text="<Student Name>" class="h2 description-label"></Label>
-			<Button text="Let's log reading"></Button>
-			
+			<TextField hint="student name" [(ngModel)]="name"></TextField>
+			<Button text="Let's log reading" (tap)="login()"></Button>
+
 		</StackLayout>
 	</ScrollView>
 </GridLayout>

@@ -1,0 +1,27 @@
+<ActionBar title="Reading Log for {{studentname}}" class="title">
+</ActionBar>
+
+<StackLayout orientation="vertical">
+    <DatePicker [(ngModel)]="readingLog.date">
+    </DatePicker>
+    <TextField hint="book title" [(ngModel)]="readingLog.title">
+    </TextField>
+    <TextField hint="minutes" [(ngModel)]="readingLog.minutes">
+    </TextField>
+    <Button [text]="'Add'" class="btn btn-primary" (tap)="add()">
+    </Button>
+
+    <StackLayout orientation="Horizontal" *ngFor="let entry of readingLogList">
+        <Label text={{entry.date.toDateString()}}></Label>
+        <Label text=" "></Label>
+        <Label text={{entry.title}}></Label>
+        <Label text=" "></Label>
+        <Label text={{entry.minutes}}></Label>
+        <Label text=" minute(s)"></Label>
+
+    </StackLayout>
+
+    <Button [text]="'Submit'" class="btn btn-primary" (tap)="submit()">
+    </Button>
+
+</StackLayout>
