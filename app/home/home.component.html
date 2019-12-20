@@ -1,14 +1,10 @@
 <ActionBar title="Bookworm Reading Log" class="title">
 </ActionBar>
 
-<GridLayout>
-	<ScrollView>
-		<StackLayout class="home-panel">
-			<!--Add your page content here-->
-			<Label textWrap="true" text="Reading is awesome!" class="h2 description-label"></Label>
-			<TextField hint="student name" [(ngModel)]="name"></TextField>
-			<Button text="Let's log reading" (tap)="login()"></Button>
+	<StackLayout class="home-panel">
+		<!--Add your page content here-->
+		<Label textWrap="true" text="Reading is awesome!" class="h2 description-label"></Label>
+		<TextField hint="student name" [(ngModel)]="name"></TextField>
+		<Button text="Let's log reading" (tap)="login()"></Button>
 
-		</StackLayout>
-	</ScrollView>
-</GridLayout>
+	</StackLayout>

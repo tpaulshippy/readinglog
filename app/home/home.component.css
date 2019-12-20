@@ -7,3 +7,7 @@
 .description-label{
     margin-bottom: 15;
 }
+
+StackLayout {
+    background-image: url("~/images/background.jpg");
+}
